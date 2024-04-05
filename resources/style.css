@@ -13,7 +13,6 @@
 }
 .content{
     width: 50%;
-    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,34 +45,19 @@
 .mensaje{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-/* 
-.libro {
-  perspective: 1000px;
-}
+@media (max-width: 768px) {
+    .container .content img{
+        width: 250px;
+    }
+    .container {
+        height: 100vh;
+        flex-wrap: wrap;
+        align-content: center;
+    }
 
-.pagina1,
-.pagina2 {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 10px;
-  transition: transform 0.8s;
-  backface-visibility: hidden;
+    .content {
+        /* padding: 1rem; Reducimos el padding */
+        padding: 1rem;
+        width: 90%;
+    }
 }
-
-.pagina1 {
-  left: 0;
-}
-
-.pagina2 {
-  right: 0;
-  transform: rotateY(-180deg);
-}
-
-.libro.abierto .pagina1 {
-  transform: rotateY(180deg);
-}
-
-.libro.abierto .pagina2 {
-  transform: rotateY(0deg);
-} */
